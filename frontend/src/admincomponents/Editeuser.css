@@ -1,0 +1,86 @@
+/* Page container styling */
+.edit-user-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7e57c2, #9575cd); /* Violet gradient */
+    padding: 20px;
+  }
+  
+  /* Form container */
+  .edit-user-form {
+    background-color: #ffffff; /* White background for contrast */
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Modern shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+  }
+  
+  /* Form title */
+  .edit-user-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #512da8; /* Deep violet text color */
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Input fields */
+  .edit-user-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #d1c4e9; /* Light violet border */
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .edit-user-input:focus {
+    border-color: #673ab7; /* Violet focus border */
+    box-shadow: 0 0 10px rgba(103, 58, 183, 0.3);
+    outline: none;
+  }
+  
+  /* Submit button */
+  .edit-user-button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #673ab7; /* Vibrant violet */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .edit-user-button:hover {
+    background-color: #512da8; /* Slightly darker violet */
+    transform: translateY(-2px);
+  }
+  
+  .edit-user-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 480px) {
+    .edit-user-form {
+      padding: 20px;
+    }
+  
+    .edit-user-input {
+      font-size: 0.9rem;
+    }
+  
+    .edit-user-button {
+      font-size: 0.9rem;
+    }
+  }
+  

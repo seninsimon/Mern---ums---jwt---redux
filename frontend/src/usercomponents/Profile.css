@@ -1,0 +1,86 @@
+/* Base styles for the profile container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a4e8c, #7f5af0);
+  padding: 20px;
+}
+
+/* Profile card styles */
+.profile-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Profile picture styling */
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #7f5af0;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Profile text */
+.profile-text {
+  font-size: 16px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+/* File input wrapper */
+.file-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* File input styles */
+.file-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 200px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.file-input:focus {
+  outline: none;
+  border-color: #7f5af0;
+  box-shadow: 0 0 5px rgba(127, 90, 240, 0.4);
+}
+
+/* Profile button styles */
+.profile-button {
+  background-color: #7f5af0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.profile-button:hover {
+  background-color: #6c4bc7;
+  transform: translateY(-2px);
+}
+
+.profile-button:disabled {
+  background-color: #b7a6f6;
+  cursor: not-allowed;
+}

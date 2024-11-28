@@ -1,0 +1,98 @@
+/* Container for admin login page */
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 20px;
+}
+
+/* Login form styling */
+.admin-login-form {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form title */
+.form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+/* Form input fields */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+  border-color: #16213e;
+  box-shadow: 0 0 8px rgba(22, 33, 62, 0.2);
+  outline: none;
+}
+
+/* Submit button */
+.form-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1a1a2e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-button:hover {
+  background-color: #16213e;
+  transform: translateY(-2px);
+}
+
+.form-button:active {
+  transform: translateY(1px);
+}
+
+.form-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Success and error messages */
+.form-error {
+  color: #ff5252;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.form-success {
+  color: #4caf50;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 480px) {
+  .admin-login-form {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}

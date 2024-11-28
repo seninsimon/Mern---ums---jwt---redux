@@ -1,0 +1,76 @@
+/* Base styles for the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2a2a72, #7f5af0);
+  padding: 20px;
+}
+
+/* Form styles */
+.login-form {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-title {
+  color: #2a2a72;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Input fields */
+.form-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #7f5af0;
+  box-shadow: 0 0 5px rgba(127, 90, 240, 0.4);
+}
+
+/* Button styles */
+.form-button {
+  background-color: #7f5af0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-button:hover {
+  background-color: #6c4bc7;
+  transform: translateY(-2px);
+}
+
+.form-button:disabled {
+  background-color: #b7a6f6;
+  cursor: not-allowed;
+}
+
+/* Error message styles */
+.form-error {
+  color: #e63946;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

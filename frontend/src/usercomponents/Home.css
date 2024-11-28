@@ -1,0 +1,62 @@
+/* Container for the home page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a4e8c, #7f5af0);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title styling */
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile link styling */
+.profile-link {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #4a4e8c;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-link:hover {
+  background-color: #e3dcff;
+  transform: translateY(-3px);
+}
+
+/* Logout button styling */
+.logout-button {
+  background-color: #ff5252;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover {
+  background-color: #ff6f6f;
+  transform: translateY(-3px);
+}
+
+.logout-button:active {
+  transform: translateY(1px);
+}

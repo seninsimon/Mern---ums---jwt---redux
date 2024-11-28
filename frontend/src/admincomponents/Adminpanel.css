@@ -1,0 +1,162 @@
+/* General page styling */
+.admin-panel-page {
+    padding: 20px;
+    background: linear-gradient(135deg, rgb(24, 30, 55), #9575cd); /* Violet gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header buttons */
+  .admin-panel-header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #673ab7; /* Vibrant violet */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .admin-panel-btn:hover {
+    background-color: #512da8;
+    transform: translateY(-2px);
+  }
+  
+  .logout-btn {
+    background-color: #d32f2f; /* Red for logout */
+  }
+  
+  .logout-btn:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Table wrapper */
+  .admin-panel-table-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+    background-color: #540772;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table styles */
+  .admin-panel-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .admin-panel-table th,
+  .admin-panel-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-panel-table th {
+    background-color: #673ab7; /* Violet header */
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .admin-panel-table td {
+    font-size: 19px;
+    color: white;
+  }
+  
+  .admin-panel-user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Action buttons */
+  .admin-panel-action-btn {
+    padding: 6px 12px;
+    margin: 0 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .edit-btn {
+    background-color: #664caf; /* Green for edit */
+  }
+  
+  .edit-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .delete-btn {
+    background-color: #f44336; /* Red for delete */
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .admin-panel-table-wrapper {
+      padding: 10px;
+    }
+  
+    .admin-panel-table th,
+    .admin-panel-table td {
+      font-size: 0.8rem;
+    }
+  
+    .admin-panel-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+
+
+
+
+
+  .admin-panel-search {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-panel-search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #d0bfff; /* Light violet border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .admin-panel-search input[type="text"]:focus {
+    outline: none;
+    border-color: #7b2cbf; /* Violet focus */
+    box-shadow: 0 0 5px rgba(123, 44, 191, 0.5); /* Violet shadow */
+  }
+  

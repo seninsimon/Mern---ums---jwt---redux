@@ -1,0 +1,102 @@
+/* General page styling */
+.add-user-page {
+    padding: 20px;
+    background: linear-gradient(135deg, #7e57c2, #9575cd); /* Violet gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .add-user-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .add-user-form h2 {
+    margin-bottom: 20px;
+    color: #673ab7;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .input-field,
+  .input-file {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus,
+  .input-file:focus {
+    border-color: #673ab7;
+    box-shadow: 0 0 5px rgba(103, 58, 183, 0.5);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #673ab7; /* Violet */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #512da8;
+    transform: translateY(-2px);
+  }
+  
+  /* File input styling */
+  .input-file {
+    border: none;
+    background-color: #f3f3f3;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .input-file::-webkit-file-upload-button {
+    background-color: #673ab7;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .input-file::-webkit-file-upload-button:hover {
+    background-color: #512da8;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .add-user-form {
+      padding: 20px;
+    }
+  
+    .add-user-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
